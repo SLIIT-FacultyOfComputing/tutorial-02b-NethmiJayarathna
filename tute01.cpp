@@ -18,13 +18,22 @@ printf("Hello World") --> std::cout << "Hello World";
 */
 
 
-#include <stdio.h>
-int main() 
-{
+
+// C++ Program to Convert Centimeters to Inches
+#include <iostream>
+int main(){
     float cm, inches;
-    printf("Enter a length in cm : ");
-    scanf("%f",&cm);
+    
+    // Asking for input
+    std::cout << "Enter the length in centimeters: ";
+    std::cin >> cm;
+    
+    // Conversion
     inches = cm / 2.54;
-    printf("Length in inches is %f \n", inches);
+    
+    
+    // Displaying output
+    std::cout << cm << " cm is equals to: " << inches << " inches" << endl;
+    
     return 0;
-}  
+}
